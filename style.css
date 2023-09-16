@@ -10,7 +10,7 @@ body {
 }
 
 img#image-films  {
-    border: 5px solid white;
+    border: 20px solid white;
     display: block;
     width: 100%;
     height: auto;
@@ -46,6 +46,7 @@ img#image-films  {
     text-align: center;
 }
 
+/*
 .select-film {
     max-width: 330px;
     margin: 50px auto;
@@ -63,6 +64,6 @@ img#image-films  {
     cursor: pointer;
     justify-content: space-between;
 }
-
+*/
 
 
