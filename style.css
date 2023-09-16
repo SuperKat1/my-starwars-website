@@ -46,10 +46,23 @@ img#image-films  {
     text-align: center;
 }
 
-.site-footer  {
-    width:100%;
-    padding: 1.1rem;
-    text-align:center;
-    background: rgb(1, 0, 8);
+.select-film {
+    max-width: 330px;
+    margin: 50px auto;
 }
+
+.select-film .select-btn {
+    display: flex;
+    height: 55px;
+    background: white;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+
 

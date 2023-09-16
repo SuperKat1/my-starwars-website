@@ -11,6 +11,10 @@ async function fetchData(path) {
 
         ul.append(li)
     });
-    document.body.append(ul)
+//    document.body.append(ul)
 }  
 fetchData("films")
+
+// Drop down films menu
+
+
