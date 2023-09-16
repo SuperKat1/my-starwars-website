@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>My Star Wars Website</title>
+    <script src="script.js" defer></script>
 </head>
 
-<body>
-  <script src="script.js"></script>
+<body>  
   <header>
     <div id="title">
       <img
@@ -19,24 +19,27 @@
     </div>
   </header>
 
-  <div class="main_images">
-    <div id="films_photo">
-      <img
+  <main>
+  <div class="container">
+    <img
+        id="image-films"
         src="./photos/star-wars-timeline.webp"
         alt="Three movie panels from The Phantom Menace, The Empire Strikes Back and The Rise of SkyWalker"
         title="Films Sample Image"
-      />
-      <p>Star Wars Films</p>
+    />
+    <div class="overlay">
+      <div class="text">Do you have a favourite Star Wars movie? Choose one from the drop down menu to find out more.</div>
     </div>
+  </div>
 
-    <div id="people_photo">
+  <!--  <div id="people_photo">
       <img
         src="./photos/star-wars-a-new-hope.jpg"
         alt="Still frame of Luke SkyWalker, Princess Leia and Han Solo looking up and smiling delightedly"
         title="Characters"
       />
       <p>Star Wars People</p>
-    </div>
+    </div> */
 
     <div id="planets_photo">
      <img
@@ -74,7 +77,8 @@
      <p>Vehicles</p>
     </div>
 
-  </div>
+  </div> -->
+  </main>
 
   <footer class="site-footer">
     <p>Designed and developed by Sandra Katsikis 2023</p>

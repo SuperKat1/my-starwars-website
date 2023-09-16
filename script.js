@@ -1,6 +1,7 @@
-async function fetchData(){
-    const response = await fetch("https://swapi.dev/api/films")
-    const data = await response.json()
+async function fetchData(path) {
+    const rootURL = "https://swapi.dev/api/";
+    const response = await fetch(rootURL + path);
+    const data = await response.json();
 
     const ul = document.createElement('ul')
 
@@ -10,7 +11,6 @@ async function fetchData(){
 
         ul.append(li)
     });
-
-    document.body.append(ul)    
-}
-fetchData()
+    document.body.append(ul)
+}  
+fetchData("films")
