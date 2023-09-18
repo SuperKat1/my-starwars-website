@@ -2,10 +2,6 @@
 const chooseMovieButton = document.getElementById("chooseMovie");    
 const menu = document.getElementById("menu");
 
-chooseMovieButton.addEventListener("mouseenter", () => {chooseMovieButton.style.backgroundColor='gold';})
-chooseMovieButton.addEventListener("mouseleave", () => {chooseMovieButton.style.backgroundColor='white';})
-
-
 chooseMovieButton.addEventListener("click", () => {
     if (menu.classList.contains("menu_active")) {
         menu.classList.remove("menu_active");
@@ -14,23 +10,21 @@ chooseMovieButton.addEventListener("click", () => {
     }
 });
 
-
-
-
-
 async function fetchData(path) {
     const rootURL = "https://swapi.dev/api/";
     const response = await fetch(rootURL + path);
     const data = await response.json();
-
-    const ul = document.createElement('ul')
+    chooseMovieButton.removeAttribute("disabled");  // this is required because the API response time is really, really slow
+    chooseMovieButton.style.backgroundColor='white';  // this indicates to the webpage user that the menu select is ready to use
+    chooseMovieButton.addEventListener("mouseenter", () => {chooseMovieButton.style.backgroundColor='gold';});
+    chooseMovieButton.addEventListener("mouseleave", () => {chooseMovieButton.style.backgroundColor='white';});
 
     data.results.forEach(film => {
-        const li = document.createElement('li')
-        li.innerText = film.title
-        ul.append(li)
+        const filmButton = document.createElement('button')
+        filmButton.innerText = film.title
+        menu.append(filmButton)
     });
-
+    
 }  
 fetchData("films")
 
