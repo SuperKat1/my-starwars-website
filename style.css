@@ -81,5 +81,17 @@ img#image-films  {
     justify-content: space-between;
 }
 
+.menu {
+    display: none;
+    flex-direction: column;
+    max-width: 200px;
+    color: white;
+    margin: 12px auto;
+}
+
+.menu_active {
+    display: flex;
+}
+
 
 
