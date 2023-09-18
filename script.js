@@ -8,13 +8,15 @@ async function fetchData(path) {
     data.results.forEach(film => {
         const li = document.createElement('li')
         li.innerText = film.title
-
         ul.append(li)
     });
-//    document.body.append(ul)
+
 }  
 fetchData("films")
 
 // Drop down films menu
+
+    
+
 
 
