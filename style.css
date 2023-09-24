@@ -52,24 +52,18 @@ img#image-films  {
 .text  {
     color:black;
     font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
 
 .select-film {
     max-width: 200px;
-    margin: 50px auto;
+    margin: 20px auto;
 }
 
 .select-film .select-btn #chooseMovie{
     display: flex;
-    height: 55px;
+    height: 50px;
     background: black;
     padding: 20px;
     color: black;
@@ -86,11 +80,39 @@ img#image-films  {
     flex-direction: column;
     max-width: 200px;
     color: white;
-    margin: 12px auto;
+    margin: 12px auto;    
 }
 
 .menu_active {
     display: flex;
+}
+
+.lists {
+    display: none;
+    justify-content: center;
+    margin: 12px 0;
+    gap: 24px;
+}
+
+.lists_active {
+    display: flex;
+}
+
+.list {
+    width: 300px;
+}
+
+.list > span {
+    margin-bottom: 12px;
+}
+
+.list-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-items a {
+    color: #ffffff;
 }
 
 
